@@ -20,13 +20,19 @@
     ],
     'external_dependencies': {
         'python': [
-            'pytrustnfe.nfse.dsf', 'pytrustnfe.certificado'
+            'pytrustnfe.nfse.dsf',
+            'pytrustnfe.certificado',
+            'hashlib',
+            'zeep',
         ],
     },
     'data': [
         'views/br_account_service.xml',
         'views/invoice_eletronic.xml',
+        'views/account_fiscal_position.xml',
+        'views/account_invoice.xml',
         'reports/danfse_dsf.xml',
+        'data/res.state.city.csv',
     ],
     'installable': True,
     'application': True,
