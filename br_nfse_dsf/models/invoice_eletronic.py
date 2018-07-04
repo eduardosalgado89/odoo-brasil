@@ -241,7 +241,7 @@ class InvoiceEletronic(models.Model):
                 str(cnpj_cpf).zfill(14)
             )
 
-            assinatura = hashlib.sha1(assinatura.encode()).hexdigest()
+            assinatura = hashlib.sha1(assinatura.encode('utf-8')).hexdigest()
 
             rps['assinatura'] = assinatura
 
